@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>TOUS les JOURS 모바일</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" />
+        </a>
+      </div>
+
+      <div class="header-right">
+        <button class="search-btn" id="searchBtn">
+          <img src="img/search.png" />
+        </button>
+
+        <button class="login-btn" id="loginBtn">Login</button>
+      </div>
+    </header>
+
+    <!-- 메뉴 -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li class="has-submenu">
+          <a href="#">브랜드 소식</a>
+          <ul class="mobile-submenu">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">글로벌 뚜레쥬르</a></li>
+            <li><a href="#">뚜레쥬르 라뜰리에</a></li>
+            <li><a href="#">뚜레쥬르 광고</a></li>
+            <li><a href="#">뉴스 & 공지사항</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">제품</a>
+          <ul class="mobile-submenu">
+            <li><a href="#">빵</a></li>
+            <li><a href="#">케이크</a></li>
+            <li><a href="#">델리</a></li>
+            <li><a href="#">디저트&스낵</a></li>
+            <li><a href="#">선물</a></li>
+            <li><a href="#">음료</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">이벤트&멤버십</a>
+          <ul class="mobile-submenu">
+            <li><a href="#">진행중인 이벤트</a></li>
+            <li><a href="#">이벤트 당첨자</a></li>
+            <li><a href="#">CJ ONE 멤버십</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">제휴혜택&기프트카드</a>
+          <ul class="mobile-submenu">
+            <li><a href="#">제휴혜택</a></li>
+            <li><a href="#">기프트카드</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <a href="#">뚜레쥬르 앱&온라인 쇼핑몰</a>
+          <ul class="mobile-submenu">
+            <li><a href="#">뚜레쥬르 앱</a></li>
+            <li><a href="#">홈페이지 전용 예약 배송</a></li>
+            <li><a href="#">꽃&케이크 택배 배송</a></li>
+            <li><a href="#">대량 구매</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 검색 컨테이너 -->
+    <div class="search-container" id="searchContainer">
+      <form class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="검색어를 입력하세요"
+        />
+        <button type="submit" class="search-submit">검색</button>
+      </form>
+    </div>
+
+    <!-- 오버레이 -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- 메인 배너 -->
+    <div class="main-banner">
+      <video src="img/bread1.mp4" id="bg-mv" autoplay muted loop></video>
+    </div>
+
+    <!-- 공지사항 및 이벤트 섹션 -->
+    <div class="notice-event">
+      <div class="notice">
+        <h3>News & Notice</h3>
+        <p>CJ푸드빌 개인정보처리방침 계정 고지</p>
+        <div class="plus-btn">+</div>
+      </div>
+    </div>
+
+    <!-- 자주 사용 하는 메뉴 -->
+    <div class="ct">
+      <div class="ct-1">
+        <a href="#"><img src="img/bread.png" /></a>
+        <p>제품안내</p>
+      </div>
+      <div class="ct-1">
+        <a href="#"><img src="img/sale.png" /></a>
+        <p>할인 혜택 소개</p>
+      </div>
+      <div class="ct-1">
+        <a href="#"><img src="img/cake.png" /></a>
+        <p>쇼핑몰&케익배달</p>
+      </div>
+    </div>
+
+    <!-- 신메뉴 섹션 -->
+    <h2 class="section-title">NEW MENU</h2>
+    <div class="swiper new-menu-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/new1.jpg" />
+          <div class="slide-content">
+            <h3>생딸기 담은 크림빵</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/new2.jpg" />
+          <div class="slide-content">
+            <h3>스트로베리 슈무디</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/new3.jpg" />
+          <div class="slide-content">
+            <h3>딸기 요거트 생크림 케이크</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/new4.jpg" />
+          <div class="slide-content">
+            <h3>딸기 피스타치오 롤케익</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/new5.jpg" />
+          <div class="slide-content">
+            <h3>초코 생크림 쉬폰 케이크</h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 베스트 메뉴 섹션 -->
+    <h2 class="section-title">BEST MENU</h2>
+    <div class="swiper best-menu-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/best1.jpg" />
+          <div class="slide-content">
+            <h3>기본좋은 쌀 베이글</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/best2.jpg" />
+          <div class="slide-content">
+            <h3>고단백 하루견과 곡물 베이글</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/best3.jpg" />
+          <div class="slide-content">
+            <h3>콥 샐러드</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/best4.jpg" />
+          <div class="slide-content">
+            <h3>허니 카스테라</h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/best5.jpg" />
+          <div class="slide-content">
+            <h3>로얄 밀크티 라떼</h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 프로모션 섹션 -->
+    <div class="promotion-section">
+      <div class="promo-grid">
+        <div class="promo-item">
+          <img src="img/pr1.jpg" />
+          <div class="promo-content">
+            <h3>쇼핑몰 & 케이크배달</h3>
+            <p>뚜레쥬르 제품을 온라인에서 구매하세요</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <img src="img/pr3.jpg" />
+          <div class="promo-content1">
+            <h3>창업안내</h3>
+            <p>뚜레쥬르 창업 이제 시작해 보세요</p>
+          </div>
+        </div>
+        <div class="promo-item">
+          <img src="img/pr4.jpg" />
+          <div class="promo-content1">
+            <h3>기사 채용안내</h3>
+            <p>제과제빵의 꿈을 뚜레쥬르와 함께</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 추가컨텐츠 -->
+    <div class="ct2">
+      <div class="ct-2">
+        <a href="#"><img src="img/ins.png" /></a>
+        <p>Instagram</p>
+      </div>
+      <div class="ct-2">
+        <a href="#"><img src="img/pc.png" /></a>
+        <p>PC버전</p>
+      </div>
+      <div class="ct-2">
+        <a href="#"><img src="img/list.png" /></a>
+        <p>전체브랜드</p>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+      <div class="footer-menu">
+        <a href="#">회사소개</a>
+        <a href="#">기사 채용 안내</a>
+        <a href="#">이용약관</a>
+        <a href="#">위치기반서비스 이용약관</a>
+        <a href="#">창업안내</a>
+        <a href="#" class="highlight">개인정보처리방침</a>
+        <a href="#">영상정보처리기기 운영관리</a>
+        <a href="#">이메일무단수집거부</a>
+        <a href="#">윤리신고센터</a>
+        <a href="#">법적고지</a>
+        <a href="#">사이트맵</a>
+      </div>
+      <div class="footer-info">
+        <p>
+          상호명 : CJ푸드빌(주) 주소:(우)04555 서울시 중구 마른내로34(초동
+          106-9번지)<br />
+          KT&G을지로타워 3,9-11층 CJ푸드빌 고객센터 : 1577-0700 <br />
+          통신판매업종신고증 제 2011-서울중구-0771호 <br />
+          호스팅제공자 : CJ올리브네트웍스(주) 사업자등록번호 : 312-81-42519
+          <br />
+          대표이사 : 김찬호 개인정보보호책임자 : 김재완 대표이메일 :
+          help_master@cj.net
+        </p>
+        <p><br />Copyright 2025©CJ Foodville ALL RIGHT RESERVED.</p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // 메뉴 토글
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("overlay");
+      const searchBtn = document.getElementById("searchBtn");
+      const searchContainer = document.getElementById("searchContainer");
+
+      // 메뉴 토글 이벤트
+      menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+        searchContainer.classList.remove("active");
+      });
+
+      // 검색 버튼 이벤트
+      searchBtn.addEventListener("click", function () {
+        searchContainer.classList.toggle("active");
+        overlay.classList.toggle("active");
+        mobileMenu.classList.remove("active");
+      });
+
+      // 오버레이 클릭
+      overlay.addEventListener("click", function () {
+        mobileMenu.classList.remove("active");
+        searchContainer.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+
+      // 서브메뉴 토글
+      document.querySelectorAll(".has-submenu").forEach((item) => {
+        item.addEventListener("click", function (e) {
+          if (
+            e.target.tagName === "A" &&
+            e.target.parentNode.classList.contains("has-submenu")
+          ) {
+            e.preventDefault();
+            const submenu = this.querySelector(".mobile-submenu");
+            submenu.style.display =
+              submenu.style.display === "block" ? "none" : "block";
+          }
+        });
+      });
+
+      // 스와이퍼 초기화
+      var newMenuSwiper = new Swiper(".new-menu-swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.3,
+            spaceBetween: 12,
+          },
+          425: {
+            slidesPerView: 1.4,
+            spaceBetween: 15,
+          },
+          576: {
+            slidesPerView: 1.8,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+      var bestMenuSwiper = new Swiper(".best-menu-swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 1.3,
+            spaceBetween: 12,
+          },
+          425: {
+            slidesPerView: 1.4,
+            spaceBetween: 15,
+          },
+          576: {
+            slidesPerView: 1.8,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
